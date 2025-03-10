@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piedra, Papel, Tijera</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script> 
 </head>
 <body>
-    
+    <h1>Piedra, Papel o Tijera.</h1>
+    <section class="choice">
+        <button onclick="playGame('tijeras')" id="btnTijera">SCISSORS</button>
+        <button onclick="playGame('piedra')" id="btnPiedra">ROCK</button>
+        <button onclick="playGame('papel')" id="btnPapel">PAPER</button>
+    </section>
+    <div id="result"></div>
+    <div id="score">
+        JUGADOR: 0  | COMPUTADORA: 0
+    </div>
 </body>
 </html>
